@@ -29,9 +29,9 @@ public class Koch {
 	public static void curve(int n, double x1, double y1, double x2, double y2) {
 		StdDraw.line(x1, y1, x2, y2);
 		if (n == 0) {
-        StdDraw.line(x1, y1, x2, y2);
-        return;
-    }
+        	StdDraw.line(x1, y1, x2, y2);
+        	return;
+    		}
     	double x2_new = x1 + (x2 - x1) / 3.0;
     	double y2_new = y1 + (y2 - y1) / 3.0;
     	double x4_new = x1 + 2 * (x2 - x1) / 3.0;
@@ -49,7 +49,6 @@ public class Koch {
 		// A little tweak that makes the drawing look better
 		StdDraw.setYscale(0, 1.1);
 		StdDraw.setXscale(0, 1.1);
-		// Draws a Koch snowflake of depth n
 		//// Write the rest of your code below.
 		double x1 = 0.2, y1 = 0.65;
     	double x2 = 0.8, y2 = 0.65;
